@@ -21,7 +21,7 @@
             </td>
             <td>
                 <h3>GIABAO-SHOP - Văn phòng ONLINE </h3>
-                ĐC:  P414 - Tòa nhà Bắc Hà - HH2 - Lê Văn Lương - (048) 5877804
+                ĐC: Ngõ 20 - Hồ Tùng Mậu - (048) 5877804
             </td>
         </tr>
     </table>
