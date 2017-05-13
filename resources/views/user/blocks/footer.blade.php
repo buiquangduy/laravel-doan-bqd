@@ -10,7 +10,7 @@
         <tr>
             <td>
                 <h3>GIABAO-SHOP - CƠ SỞ bán lẻ</h3>
-                CS 1: 146 Xã Đàn - Đống Đa - Hà Nội  -  Điện thoại: 0913 906166<br/>
+                CS 1: 512 Trương Định - Hoàng Mai - Hà Nội  -  Điện thoại: 01652400676<br/>
                 CS 2 : 51 Xuân Thủy, Cầu Giấy, Hà Nội (83 XT cũ)- Điện thoại : 048 5877804 <br/>
                 CS 3: 106 Tô Hiệu, Hải Phòng - Điện thoại: 0941103838<br/>
                 CS 4: 210 Tống Duy Tân, Thanh Hóa - Điện thoại: 0916072258
