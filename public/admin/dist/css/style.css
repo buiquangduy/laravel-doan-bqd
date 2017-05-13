@@ -1,0 +1,45 @@
+#notify {
+    width: 270px;
+}
+.image_noty img{
+    width: 30px;
+}
+.badge {
+    position: absolute;
+    top: 4px;
+    right: 15px;
+    background-color: red;
+}
+.setHeightNotify{
+    height: auto !important;
+}
+
+.setHeightNotifyMin{
+    min-height: 70px !important;
+    height: auto !important;
+    padding-left: 0px;
+}
+.message a{
+    padding: 3px 35px !important;
+}
+.notify_li_sub span, span a {
+    color: #23527c;
+}
+.time {
+    font-style: italic;
+    color: #23527c;
+    font-weight: bold;
+}
+.btn-block {
+    width: 50%;
+    float: right;
+    border-radius: 0px;
+    background: url(../img/header.jpg) left top repeat-x;
+}
+.panel-heading {
+    background: url(../img/header.jpg) left top repeat-x;
+}
+.panel-title {
+    color: #ffffff;
+    font-weight: bold;
+}
