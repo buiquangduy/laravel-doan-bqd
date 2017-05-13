@@ -24,8 +24,8 @@
       <file leaf-file-name="footer.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/user/blocks/footer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            <state relative-caret-position="297">
+              <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -343,12 +343,12 @@
       <workItem from="1492852946170" duration="6866000" />
       <workItem from="1494097016809" duration="401000" />
       <workItem from="1494423934250" duration="76000" />
-      <workItem from="1494678692497" duration="836000" />
+      <workItem from="1494678692497" duration="923000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102558000" />
+    <option name="totallyTimeSpent" value="102645000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -789,8 +789,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/user/blocks/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        <state relative-caret-position="297">
+          <caret line="22" column="56" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="56" />
           <folding />
         </state>
       </provider>
