@@ -17,6 +17,8 @@ class CustomerController extends Controller {
             } else {
                 return redirect('/')->with(['flash_level' => 'success', 'flash_message' => 'Sai email hoặc mật khẩu']);
             }
+        } else {
+            return redirect('/')->with(['flash_level' => 'success', 'flash_message' => 'Sai email hoặc mật khẩu']);
         }
     }
 

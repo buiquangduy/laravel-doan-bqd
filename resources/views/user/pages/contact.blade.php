@@ -4,7 +4,7 @@
 @section('content')
 <div id="content">
   <div class="wrap_content">
-    <div class="location white"><a href="/">Trang chủ</a> &gt;&gt; Liên hệ</div>
+    <div class="location white"><a href="{{url('/')}}">Trang chủ</a> &gt;&gt; Liên hệ</div>
     <div class="clear"></div>
     <div class="box_common">
     <div class="title_box_1"><h1>Liên hệ</h1></div><!--title_box_1-->

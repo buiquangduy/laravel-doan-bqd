@@ -8,28 +8,28 @@
      <!--  breadcrumb --> 
       <ul class="breadcrumb">
         <li>
-          <a href="#">Home</a>
+          <a href="{{url('/')}}">Trang chủ</a>
           <span class="divider">/</span>
         </li>
-        <li class="active"> Shopping Cart</li>
+        <li class="active"> Giỏ hàng</li>
          @if(Session::has('flash_message'))
           <div class="thongbao">
               {!! @Session::get('flash_message') !!}
           </div>
         @endif
-      </ul>       
-      <h1 class="heading1"><span class="maintext"> Shopping Cart</span><span class="subtext"> All items in your  Shopping Cart</span></h1>
+      </ul>
+      @if($total !=0 )
+      <h1 class="heading1"><span class="maintext"></span><span class="subtext">Tất cả sản phẩm trong giỏ hàng của bạn</span></h1>
       <!-- Cart-->
       <div class="cart-info">
-        @if($total !=0 )
         <table class="table table-striped table-bordered">
           <tr>
-            <th class="image">Image</th>
-            <th class="name">Product Name</th>
-            <th class="quantity">Qty</th>
-              <th class="total">Action</th>
-            <th class="price">Unit Price</th>
-            <th class="total">Total</th>
+            <th class="image">Ảnh</th>
+            <th class="name">Tên sản phẩm</th>
+            <th class="quantity">Số lượng</th>
+              <th class="total">Cập nhật/Xóa</th>
+            <th class="price">Giá bán</th>
+            <th class="total">Tổng tiền</th>
            
           </tr>
           <form method="POST" action="">
@@ -62,11 +62,11 @@
             <div class="span4 pull-right">
               <table class="table table-striped table-bordered ">
                 <tr>
-                  <td><span class="extra bold totalamout">Total :</span></td>
+                  <td><span class="extra bold totalamout">Tổng tiền thanh toán :</span></td>
                   <td><span class="bold totalamout">{!! number_format($total,0,",",".") !!}</span></td>
                 </tr>
               </table>
-              <a href="{!!route('checkout')!!}" class="btn btn-orange pull-right mr10">CheckOut</a>
+              <a href="{!!route('checkout')!!}" class="btn btn-orange pull-right mr10">Thanh toán</a>
             </div>
           </div>
           @endif

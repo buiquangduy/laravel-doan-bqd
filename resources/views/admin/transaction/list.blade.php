@@ -1,5 +1,5 @@
 @extends('admin.master')
-@section('controller','Detail transaction')
+@section('controller','Detail order')
 @section('action','List')
 @section('content')
     <!-- /.col-lg-12 -->
@@ -10,7 +10,8 @@
             <th>CustomerName</th>
             <th>ProductName</th>
             <th>Date</th>
-            <th>The number of products</th>
+            <th>Qty</th>
+            <th>Of transaction</th>
             <th>Payment status</th>
             <th>Total</th>
             <th>Delete</th>
@@ -31,6 +32,7 @@
                     !!}
                 </td>
                 <td>{!!$item->qty!!}</td>
+                <td>{!!$item->tran_id !!}</td>
                 <td><?php echo $item->status==0 ? "unpaid" : "paid" ?></td>
                 <td>{!!$item->amount!!}</td>
                 <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a onclick="return xacnhanxoa('do you want to delete')" href="{!! URL::route('admin.transaction.getDelete',$item->id)!!}"> Delete</a></td>

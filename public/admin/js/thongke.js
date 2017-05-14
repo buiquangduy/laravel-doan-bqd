@@ -3,7 +3,7 @@ $(document).ready(function () {
     var arrRevenueTotals = [];
     var arrAmountProducts = [];
     $.ajax({
-        url: "/laravel-doan-bqd/admin/report/getturnover",
+        url: baseURL+"/admin/report/getturnover",
         method: "GET",
         success: function (response) {
             console.log(response);

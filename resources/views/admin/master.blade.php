@@ -49,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Admin Area - Quang Duy</a>
+                <a class="navbar-brand" href="#">Xin chào - {!! Auth::user()->username !!}</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -86,17 +86,6 @@
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </span>
-                            </div>
-                            <!-- /input-group -->
-                        </li>
                         <li>
                             <a href="#"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
@@ -209,10 +198,10 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-users fa-fw"></i> Transaction<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-users fa-fw"></i> Order<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="{!! route('admin.transaction.getList')!!}">List Transaction</a>
+                                    <a href="{!! route('admin.transaction.getList')!!}">List Order</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -280,7 +269,7 @@
     <script src="{{ url('public/admin/dist/js/services.js')}}"></script>
     <script src="{{ url('public/admin/js/notify.js')}}"></script>
     <!-- DataTables JavaScript -->
-    <script src="{{ url('public/admin/bower_components/DataTables/media/js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{ url('public/admin/bower_components/datatables/media/js/jquery.dataTables.min.js')}}"></script>
     <script src="{{ url('public/admin/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js')}}"></script>
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->

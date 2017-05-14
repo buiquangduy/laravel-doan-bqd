@@ -4,8 +4,8 @@ function ckeditor (name) {
         language:'vi',
         filebrowserImageBrowseUrl : baseURL+'/public/admin/js/ckfinder/ckfinder.html?Type=Images',
         filebrowserFlashBrowseUrl : baseURL+'/public/admin/js/ckfinder/ckfinder.html?Type=Flash',
-        filebrowserImageUploadUrl : baseURL+'/public/template_admin/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
-        filebrowserFlashUploadUrl : baseURL+'/public/template_admin/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
+        filebrowserImageUploadUrl : baseURL+'/public/admin/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images',
+        filebrowserFlashUploadUrl : baseURL+'/public/admin/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash',
         toolbar:[
         ['Source','-','Save','NewPage','Preview','-','Templates'],
         ['Cut','Copy','Paste','PasteText','PasteFromWord','-','Print'],

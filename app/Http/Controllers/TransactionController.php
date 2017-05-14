@@ -18,7 +18,8 @@ class TransactionController extends Controller {
                     'transactions.user_name as user_name',
                     'orders.qty as qty',
                     'orders.amount as amount',
-                    'transactions.status as status')
+                    'transactions.status as status',
+                    'transactions.id as tran_id')
             ->orderBy('id','DESC')->get();
 
         return view('admin.transaction.list',compact('tran'));

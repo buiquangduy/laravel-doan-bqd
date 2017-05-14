@@ -1,7 +1,7 @@
 var numberTransaction = 0;
 
 function notifyNewTransaction() {
-    var url = '/laravel-doan-bqd/admin/transaction/notifyNew';
+    var url = baseURL+'/admin/transaction/notifyNew';
     sv.data.notifyNewTransaction(url, function (response) {
         numberTransaction = response.data.length;
 
@@ -18,10 +18,11 @@ function notifyNewTransaction() {
         }
         var html = '<li class="li_ul_notify"><ul>';
         for (i = 0; i < response.data.length; i++) {
-            var url = "/laravel-doan-bqd/admin/product/edit/" + response.data[i].product_id;
+            // var url = baseURL+"/admin/product/edit/" + response.data[i].product_id;
+            var url = baseURL+"/admin/transaction/list";
             var minRes = moment(response.data[i].created_at).format("mm");
             var minBefore = Math.abs(minCur - minRes);
-            var urlImage = '/laravel-doan-bqd/resources/upload/' + response.data[i].image;
+            var urlImage = baseURL+'/resources/upload/' + response.data[i].image;
             var productname = response.data[i].name;
             if (productname.length > 40)
                 productname = productname.substring(0, 50) + '...';
@@ -57,14 +58,12 @@ function notifyNewTransaction() {
         $('li.notify_li_sub').each(function () {
             $(this).click(function () {
                 var id = $(this).attr('data-id');
-                var url = '/laravel-doan-bqd/admin/transaction/setIsViewed/' + id;
+                var url = baseURL+'/admin/transaction/setIsViewed/' + id;
                 sv.data.setIsViewedTour(url, function (response) {
                     $('.nav').find('.badge').text(numberTransaction - 1);
                 });
             });
         });
-        
-        
     });
 }
 notifyNewTransaction();
