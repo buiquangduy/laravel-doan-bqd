@@ -11,15 +11,15 @@
       <div class="clear"></div>
       <div style="width:45%; float:left;">
         <b>GIABAO-SHOP - CƠ SỞ I bán lẻ</b>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.163355314959!2d105.8443653143859!3d20.986087986021513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac69f54a7d87%3A0xe7e73378453fb7f2!2zNDI4IFRyxrDGoW5nIMSQ4buLbmgsIFTDom4gTWFpLCBIb8OgbmcgTWFpLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1492531096352" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.2258495064893!2d105.84376294904114!3d20.983581994629677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac4219f006ad%3A0xd0bb6c2c4164af01!2zNTEyIFRyxrDGoW5nIMSQ4buLbmgsIFTDom4gTWFpLCBIb8OgbmcgTWFpLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1494750914956" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
         <br>
-        <small>View <a href="https://www.google.com/maps/place/428+Tr%C6%B0%C6%A1ng+%C4%90%E1%BB%8Bnh,+T%C3%A2n+Mai,+Ho%C3%A0ng+Mai,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.986088,105.8443653,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ac69f54a7d87:0xe7e73378453fb7f2!8m2!3d20.986088!4d105.846554" target="_blank" style="color:#0000FF;text-align:left">GIABAO-SHOP</a> in a larger map</small>
+        <small>View <a href="https://www.google.com/maps/place/512+Tr%C6%B0%C6%A1ng+%C4%90%E1%BB%8Bnh,+T%C3%A2n+Mai,+Ho%C3%A0ng+Mai,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@20.983582,105.8437629,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ac4219f006ad:0xd0bb6c2c4164af01!8m2!3d20.983577!4d105.845957" target="_blank" style="color:#0000FF;text-align:left">GIABAO-SHOP</a> in a larger map</small>
         <div class="clear"></div>
       </div><!--float:left-->
       <div style="width:45%; float:right;">
         <p><strong>Chi nhánh - Hà Nội<br></strong></p>
         <p><strong>Cơ sở bán lẻ :</strong></p>
-        <p><strong>CS 1 : 428 Trương Định - Hoàng Mai - Hà Nội &nbsp;</strong><strong>Hotline : 0913 906166</strong></p>
+        <p><strong>CS 1 : 512 Trương Định - Hoàng Mai - Hà Nội &nbsp;</strong><strong>Hotline : 01652400676</strong></p>
         <p><strong>CS2 : 83 Xuân Thủy, Cầu Giấy, Hà Nội Hotline :&nbsp;048 5877804</strong></p>
         <p><strong>CS 3: 106 Tô Hiệu, Hải Phòng Hotline:&nbsp;0941103838</strong></p>
         <p><strong>CS 4: 210 Tống Duy Tân, Thanh Hóa - Điện thoại:&nbsp;0916072258</strong></p>
@@ -28,7 +28,7 @@
         <p><strong>CS 6: &nbsp;30 Nguyễn Văn Cừ , TP Vinh , Nghệ An</strong></p>
         <p><strong>CS 7: 131 Cao Thắng, Hạ Long, Quảng Ninh&nbsp;</strong></p>
         <p><strong>Cơ sở ONLINE:&nbsp;<strong>&nbsp;</strong></strong></p>
-        <p><strong><strong><strong>Phòng 414 - Tòa Nhà Bắc Hà &nbsp;HH2 - Lê Văn Lương kéo dài - Thanh Xuân - Hà Nội</strong></strong><br>Hotline :&nbsp;0913906166</strong></p>
+        <p><strong><strong><strong>Ngõ 20 Hồ Tùng Mậu - Cầu Giấy - Hà Nội</strong></strong><br>Hotline :&nbsp;01652400676</strong></p>
     <div class="clear"></div>
             <br>
             <style type="text/css">
