@@ -52,7 +52,7 @@
                       <span>{!! $errors->first('telephone')!!}</span>
                     </div>
                     <div class="control-group">
-                      <label class="control-label" >Lời nhắn<span class="red">*</span></label>
+                      <label class="control-label" >Địa chỉ gửi hàng<span class="red">*</span></label>
                       <div class="controls">
                         <textarea name="note">
                             

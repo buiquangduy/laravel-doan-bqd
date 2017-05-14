@@ -8,10 +8,10 @@
     <!--  breadcrumb -->  
       <ul class="breadcrumb">
         <li>
-          <a href="#">Home</a>
+          <a href="{{url('/')}}">Trang chủ</a>
           <span class="divider">/</span>
         </li>
-        <li class="active">Checkout</li>
+        <li class="active">Hóa đơn thanh toán</li>
         @if(Session::has('flash_message'))
           <div class="thongbao">
               {!! @Session::get('flash_message') !!}
@@ -21,7 +21,7 @@
       <div class="row">        
         <!-- Account Login-->
         <div class="span9" style="margin-left:100px;width:1000px">
-          <div class="checkoutsteptitle" style="text-align: center;color: red">Bill Of Sale<a class="modify">Modify</a>
+          <div class="checkoutsteptitle" style="text-align: center;color: red;font-size: 30px;">Hóa đơn thanh toán của bạn<a class="modify"></a>
           </div>
           <div class="checkoutstep">
             <div class="row">
