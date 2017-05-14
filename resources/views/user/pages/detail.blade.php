@@ -44,7 +44,7 @@
                         </tbody></table>
                 </div>
 				 @if($product_detail->discount > 0)
-					<img src="{!!asset('public/user/img/sale.png')!!}" alt="" />
+					<img src="{!!asset('public/user/img/sale.png')!!}" alt="" width="100px;" />
 				@endif
                 <table id="tbl_config" cellspacing="0" cellpadding="0">
                     <tbody>
@@ -64,6 +64,17 @@
                 </table>
                 <p>&nbsp;</p>
                 <a href="{!! url('mua-hang',[$product_detail->id,$product_detail->alias]) !!}" class="icon btn_buy"></a>
+                <!-- facebook script start -->
+                <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.9&appId=284379612010704";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+                <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="500" data-numposts="1"></div>
+                <!-- facebook script end -->
             </div><!--overview-->
             <div class="clear"></div>
         </div><!--product-detail-->

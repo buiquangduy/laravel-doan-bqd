@@ -19,9 +19,9 @@
     @include('user.blocks.footer')
 <!-- javascript
     ================================================== -->
-    <!-- vchat start -->
-    <script lang="javascript">(function() {var pname = ( (document.title !='')? document.title : document.querySelector('h1').innerHTML );var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async=1; ga.src = '//live.vnpgroup.net/js/web_client_box.php?hash=86cea85b17fd1ba112b248df8ea13ae1&data=eyJzc29faWQiOjQ3MDM5OTksImhhc2giOiJiM2ZiMTcyZWNlZjZhOGJmMmVlNTA5MTJlYzNiNDNkNCJ9&pname='+pname;var s = document.getElementsByTagName('script');s[0].parentNode.insertBefore(ga, s[0]);})();</script>
-    <!-- vchat end -->
+<!-- vchat start -->
+<script lang="javascript">(function() {var pname = ( (document.title !='')? document.title : document.querySelector('h1').innerHTML );var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async=1; ga.src = '//live.vnpgroup.net/js/web_client_box.php?hash=86cea85b17fd1ba112b248df8ea13ae1&data=eyJzc29faWQiOjQ3MDM5OTksImhhc2giOiJiM2ZiMTcyZWNlZjZhOGJmMmVlNTA5MTJlYzNiNDNkNCJ9&pname='+pname;var s = document.getElementsByTagName('script');s[0].parentNode.insertBefore(ga, s[0]);})();</script>
+<!-- vchat end -->
     <!-- Placed at the end of the document so the pages load faster -->
 <script src="{!! url('public/user/js/jquery.js')!!}"></script>
     <script>
