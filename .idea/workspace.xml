@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1737c4ab-ae8b-4bc1-b8e8-23766e3676dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/user/master.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/master.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/user/pages/detail.blade.php" afterPath="$PROJECT_DIR$/resources/views/user/pages/detail.blade.php" />
-    </list>
+    <list default="true" id="1737c4ab-ae8b-4bc1-b8e8-23766e3676dc" name="Default" comment="" />
     <ignored path="laravel_t3h.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -501,12 +497,12 @@
       <workItem from="1494097016809" duration="401000" />
       <workItem from="1494423934250" duration="76000" />
       <workItem from="1494678692497" duration="3301000" />
-      <workItem from="1494762802986" duration="10450000" />
+      <workItem from="1494762802986" duration="11019000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115473000" />
+    <option name="totallyTimeSpent" value="116042000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -518,7 +514,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />

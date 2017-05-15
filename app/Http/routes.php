@@ -12,7 +12,9 @@
 */
 
 Route::get('/',['as'=>'home','uses'=>'WelcomeController@index']);
-
+Route::get('/404',function(){
+	return view('admin.error.404');
+});
 Route::get('home', 'HomeController@index');
 
 Route::controllers([
