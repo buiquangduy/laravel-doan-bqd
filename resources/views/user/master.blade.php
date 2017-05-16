@@ -11,6 +11,8 @@
 <link href="{!! url('public/user/css/bootstrap.css')!!}" rel="stylesheet">
 <link href="{!! url('public/user/css/bootstrap-responsive.css')!!}" rel="stylesheet">
 <link href="{!! url('public/user/css/style.css')!!}" type="text/css" media="screen" rel="stylesheet">
+<script type="text/javascript"  src="{!! url('public/user/js/bxslider.js')!!}"></script>
+<script type="text/javascript"  src="{!! url('public/user/js/jquery-3.2.1.min.js')!!}"></script>
 </head>
 <body>
 	@include('user.blocks.header')
@@ -36,6 +38,7 @@
 <script type="text/javascript"  src="{!! url('public/user/js/common.js')!!}"></script>
 <script type="text/javascript"  src="{!! url('public/user/js/swfobject.js')!!}"></script>
 <script type="text/javascript"  src="{!! url('public/user/js/magiczoom.js')!!}"></script>
+<script type="text/javascript"  src="{!! url('public/user/js/jquery.fancybox.js')!!}"></script>
 <script defer src="{!! url('public/user/js/custom.js')!!}"></script>
 <script type="text/javascript" src="{!! url('public/user/js/myscript.js')!!}"></script>
 </body>

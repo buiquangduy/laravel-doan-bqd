@@ -17,8 +17,10 @@
                 </div><!--img_large-->
                 <ul id="img_thumb">
                     @foreach($image as $item_image)
-                    <li><a class="img_thumb" href="{!!asset('resources/upload/detail/'.$item_image->image)!!}" title="" rel="zoom-id:Zoomer;" rev="/media/product/1274_24_.jpg" style="outline: 0px; display: inline-block;">
-                            <img src="{!!asset('resources/upload/detail/'.$item_image->image)!!}" alt=""></a>
+                    <li>
+                        <a class="img_thumb" id="fancybox-media" href="{!!asset('resources/upload/detail/'.$item_image->image)!!}"  style="outline: 0px; display: inline-block;">
+                            <img src="{!!asset('resources/upload/detail/'.$item_image->image)!!}" alt="">
+                        </a>
                     </li>
                     @endforeach
                 </ul>
