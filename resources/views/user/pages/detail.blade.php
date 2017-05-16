@@ -88,16 +88,14 @@
             <a href="#" class="icon next hidden" style="display: none;"></a>
             <div class="clear"></div>
             <div class="box_content">
-                <div class="caroufredsel_wrapper" style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 973px; height: 158px; margin: 0px 0px 0px -19px; overflow: hidden;"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 2641px; height: 158px;">
-                    <ul>
-                        @foreach($product_cate as $item_product_cate)
-                        <li>
-                            <a href="{!! url('chi-tiet-san-pham',[$item_product_cate->id,$item_product_cate->alias])!!}" class="img"><img src="{!!asset('resources/upload/'.$item_product_cate->image)!!}" alt="Áo thun lót nỉ AT - 3748"></a>
-                            <a href="{!! url('chi-tiet-san-pham',[$item_product_cate->id,$item_product_cate->alias])!!}" class="name">{!! $item_product_cate->name !!}</a>
-                        </li>
-                        @endforeach
-                    </ul>
-                </div>
+                <ul class="bxslider">
+                    @foreach($product_cate as $item_product_cate)
+                    <li>
+                        <a href="{!! url('chi-tiet-san-pham',[$item_product_cate->id,$item_product_cate->alias])!!}" class="img"><img src="{!!asset('resources/upload/'.$item_product_cate->image)!!}" alt="Áo thun lót nỉ AT - 3748"></a>
+                        <a href="{!! url('chi-tiet-san-pham',[$item_product_cate->id,$item_product_cate->alias])!!}" class="name">{!! $item_product_cate->name !!}</a>
+                    </li>
+                    @endforeach
+                </ul>
             </div><!--box-content-->
             @endif
         </div><!--similar_pro-->
@@ -115,12 +113,14 @@
     </div><!--wrap_content-->
 </div>
 <script type="text/javascript">
-    MagicZoom.options = {
+    $(document).ready(function () {
+      MagicZoom.options = {
         'disable-zoom' : false,
         'selectors-change' : 'click',
         'zoom-width' : 350,
         'zoom-height' : 350,
         'rightClick':'true'
-    }
+      };
+    });
 </script>
 @endsection
