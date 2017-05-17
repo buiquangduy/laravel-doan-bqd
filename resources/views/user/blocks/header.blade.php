@@ -39,7 +39,6 @@
 <div id="header">
     <div class="wrap_content">
         <a href="" id="logo"><img src="{!!asset('public/user/img/banner/logo.gif')!!}" width="230px" alt=""/> </a>
-        <div class="fb-like" data-href="https://www.facebook.com/shopH2T" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" style="position:absolute; top:32px; left:365px; height:30px; width:160px; overflow:hidden;"></div>
         <div id="search" class="bg">
             <form method="get" action="{!! route('searchHome')!!}">
                 <input type="hidden" name="_token" value="{!! csrf_token()!!}" />
