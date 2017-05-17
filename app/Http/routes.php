@@ -123,6 +123,13 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function(){
         Route::get('setIsViewed/{id}',['as' => 'admin.transaction.setIsViewed','uses'=>'TransactionController@setIsViewed']);
     });
 
+    #Hoa don
+	Route::group(['prefix' => 'trans'] ,function(){
+		Route::get('list',['as' => 'admin.trans.getList','uses'=>'TransactionController@getTrans']);
+		Route::get('delete/{id}',['as' => 'admin.trans.getDelete','uses'=>'TransactionController@getTransDelete']);
+	});
+
+
     #Report
     Route::group(['prefix' => 'report'] ,function(){
         Route::get('tunover',['as' => 'admin.report.tunover','uses'=>'ReportController@tunover']);

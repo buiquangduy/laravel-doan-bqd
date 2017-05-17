@@ -203,6 +203,9 @@
                                 <li>
                                     <a href="{!! route('admin.transaction.getList')!!}">List Order</a>
                                 </li>
+                                <li>
+                                    <a href="{!! route('admin.trans.getList')!!}">List Transaction</a>
+                                </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>

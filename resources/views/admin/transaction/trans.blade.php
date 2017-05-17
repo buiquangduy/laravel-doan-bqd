@@ -1,27 +1,25 @@
 @extends('admin.master')
-@section('controller','Detail order')
+@section('controller','Detail Transaction')
 @section('action','List')
 @section('content')
     <!-- /.col-lg-12 -->
     <table class="table table-striped table-bordered table-hover" id="dataTables-example">
         <thead>
         <tr align="center">
-            <th>STT</th>
+            <th>ID</th>
             <th>CustomerName</th>
             <th>ProductName</th>
             <th>Date</th>
-            <th>Qty</th>
-            <th>Of transaction</th>
+            <th>Payment status</th>
+            <th>Payment confirm</th>
             <th>Total</th>
             <th>Delete</th>
         </tr>
         </thead>
-        <?php $stt= 0; ?>
         <tbody>
-        @foreach($tran as $item)
-            <?php $stt = $stt +1;?>
+        @foreach($trans as $item)
             <tr class="odd gradeX" align="center">
-                <td>{!! $stt !!}</td>
+                <td>{!!$item->id!!}</td>
                 <td>{!!$item->user_name!!}</td>
                 <td>{!!$item->product_name!!}</td>
                 <td>
@@ -30,10 +28,10 @@
                                 ->diffForHumans()
                     !!}
                 </td>
-                <td>{!!$item->qty!!}</td>
-                <td>{!!$item->tran_id !!}</td>
+                <td><?php echo $item->status==0 ? "in progress" : "paid" ?></td>
+                <td><button>confirm</button></td>
                 <td>{!!$item->amount!!}</td>
-                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a onclick="return xacnhanxoa('do you want to delete')" href="{!! URL::route('admin.transaction.getDelete',$item->id)!!}"> Delete</a></td>
+                <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a onclick="return xacnhanxoa('do you want to delete')" href="{!! URL::route('admin.trans.getDelete',$item->id)!!}"> Delete</a></td>
             </tr>
         @endforeach
         </tbody>
