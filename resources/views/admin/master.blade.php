@@ -51,7 +51,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Xin chào - {!! Auth::user()->username !!}</a>
+                <a class="navbar-brand" href="#">Hello - {!! Auth::user()->username !!}</a>
             </div>
             <!-- /.navbar-header -->
 
