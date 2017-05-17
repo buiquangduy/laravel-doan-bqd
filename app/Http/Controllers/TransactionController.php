@@ -88,4 +88,14 @@ class TransactionController extends Controller {
 	    return view('admin.transaction.trans',compact('trans'));
     }
 
+    public function confirm($id)
+    {
+	    $confirm = DB::table('transactions')
+		    ->where('id', $id)
+		    ->update(['status' => 1]);
+	    if($confirm) {
+	    	return "OK";
+	    }
+    }
+
 }

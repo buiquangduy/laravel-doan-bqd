@@ -23,6 +23,7 @@ Route::controllers([
 ]);
 Route::get('auth/login',['as' => 'login','uses'=>'Auth\AuthController@getLogin']);
 Route::group(['prefix' => 'admin','middleware' => 'auth'], function(){
+	Route::get('/',['as' => 'admin.cate.getList','uses'=>'CateController@getList']);
     #category
 	Route::group(['prefix' => 'cate'], function(){
 		Route::get('list',['as' => 'admin.cate.getList','uses'=>'CateController@getList']);
@@ -127,6 +128,7 @@ Route::group(['prefix' => 'admin','middleware' => 'auth'], function(){
 	Route::group(['prefix' => 'trans'] ,function(){
 		Route::get('list',['as' => 'admin.trans.getList','uses'=>'TransactionController@getTrans']);
 		Route::get('delete/{id}',['as' => 'admin.trans.getDelete','uses'=>'TransactionController@getTransDelete']);
+		Route::get('confirm/{id}',['as' => 'admin.trans.confirm','uses'=>'TransactionController@confirm']);
 	});
 
 

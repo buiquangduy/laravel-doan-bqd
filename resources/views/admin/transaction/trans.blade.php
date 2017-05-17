@@ -28,12 +28,29 @@
                                 ->diffForHumans()
                     !!}
                 </td>
-                <td><?php echo $item->status==0 ? "in progress" : "paid" ?></td>
-                <td><button>confirm</button></td>
+                <td class="paymentstt_{!!$item->id!!}"><?php echo $item->status==0 ? "in progress" : "paid" ?></td>
+                <td><a style="<?php echo $item->status == 1 ? 'display:none;' : '' ?>" class="conf confirm_{!!$item->id!!} btn btn-primary" data-id = "{!!$item->id!!}">confirm</a></td>
                 <td>{!!$item->amount!!}</td>
                 <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a onclick="return xacnhanxoa('do you want to delete')" href="{!! URL::route('admin.trans.getDelete',$item->id)!!}"> Delete</a></td>
             </tr>
         @endforeach
         </tbody>
     </table>
+    <script>
+      $(document).ready(function(){
+        $('.conf').click(function () {
+          var id = $(this).data().id;
+          $.ajax({
+            url: baseURL+"/admin/trans/confirm/"+id,
+            method: "GET",
+            success: function(response){
+                if(response == 'OK') {
+                  $('.confirm_'+id).attr('style','display:none;');
+                  $('.paymentstt_'+id).html('paid');
+                }
+            }
+          });
+        });
+      });
+    </script>
 @endsection
