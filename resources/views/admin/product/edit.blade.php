@@ -175,12 +175,12 @@
                     <div class="col-md-4"> 
                     	@foreach($product_image as $key => $item)
                             <div class="form-group" id="{!! $key !!}">
-                  <img src="{!!asset('resources/upload/detail/'.$item['image'])!!}" class="img_detail" idHinh="{!! $item['id'] !!}"
-                  id="{!! $key !!}" />
+                              <img src="{!!asset('resources/upload/detail/'.$item['image'])!!}" class="img_detail" idHinh="{!! $item['id'] !!}"
+                              id="{!! $key !!}" />
                              
-                         	<a href="javascript:void(0)" type="button" id="del_img_demo" class="btn btn-danger btn-circle icon_del">
-                            	<i class="fa fa-times"></i>
-                            </a>   
+                            <a href="javascript:void(0)" type="button" id="del_img_demo" class="btn btn-danger btn-circle icon_del">
+                                <i class="fa fa-times"></i>
+                            </a>
                            </div>
                          @endforeach
                          <div id="insert"></div>
