@@ -17,7 +17,8 @@ function notifyNewTransaction() {
             $('.nav').find('.badge').text('');
         }
         var html = '<li class="li_ul_notify"><ul>';
-        for (i = 0; i < response.data.length; i++) {
+    
+        for (i = 0; i < numberTransaction; i++) {
             // var url = baseURL+"/admin/product/edit/" + response.data[i].product_id;
             var url = baseURL+"/admin/transaction/list";
             var minRes = moment(response.data[i].created_at).format("mm");
@@ -47,13 +48,9 @@ function notifyNewTransaction() {
         html += '        </a>';
         html += '    </div>';
         html += '</li>';
+
         $('ul#notify').html(html);
 
-
-        if (response.data.length < 3) {
-            $('li.li_ul_notify ul').addClass('setHeightNotifyMin');
-            $('.seeAllNotify').hide();
-        }
 //        Set is Viewed
         $('li.notify_li_sub').each(function () {
             $(this).click(function () {
@@ -68,11 +65,3 @@ function notifyNewTransaction() {
 }
 notifyNewTransaction();
 
-//setInterval(function () {
-//    notifyNewTransaction();
-//}, 30000);
-
-$('body').on('click', '.seeAllNotify', function (e) {
-    e.stopPropagation();
-    $('li.li_ul_notify ul').toggleClass('setHeightNotify');
-});
