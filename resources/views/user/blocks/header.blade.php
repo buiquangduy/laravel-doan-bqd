@@ -15,7 +15,6 @@
                         <input type="text" name="txtCustomerEmail" placeholder="Email đăng nhập" />
                         <input class="style_input" name="txtCustomerPassword" type="password" placeholder="*********"/>
                         <div class="clear"></div>
-                        <!-- <a href="" class="l font11 blue" style="line-height:48px; padding-left:10px;">Quên mật khẩu?</a> -->
                         <input style="height:28px; line-height:28px; padding: 0 14px; text-transform:uppercase; color:white; display:block; background:#f60; float:left; border:none; cursor:pointer;" type="submit" value="Đăng nhập">
                         <div class="clear"></div>
                         <p align="left" style="padding-bottom:5px; margin:10px 0 0 0;">Bạn chưa có tài khoản?  

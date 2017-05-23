@@ -1,5 +1,30 @@
 #notify {
     width: 270px;
+    height: 187px;
+    overflow: auto;
+}
+#notify::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#notify::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+#notify::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #FFFBD3;
+}
+
+.li_ul_notify ul{
+    padding-left: 0px;
 }
 .image_noty img{
     width: 30px;

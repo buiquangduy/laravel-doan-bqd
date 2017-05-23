@@ -41,7 +41,6 @@ class ReportController extends Controller {
         $json['month'] = $month;
         $json['data'] = $arrTurnover;
         $json['data_qty'] = $arrTurnover_2;
-        $json['code'] = 1;
         return $json;
     }
 }

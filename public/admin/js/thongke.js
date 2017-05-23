@@ -13,6 +13,7 @@ $(document).ready(function () {
                data[item.month] = item;
             });
 
+            // console.log(data);
             $.each(response.month, function (i, item) {
                 var tm= data[item] ? data[item].qty : 0;
                 arrTunoverTotals.push(tm);
