@@ -39,16 +39,6 @@ function notifyNewTransaction() {
             html += '</li>';
 
         }
-        html += '</ul></li>';
-        html += '<li class="seeAllNotify">';
-        html += '    <div class="text-center">';
-        html += '        <a>';
-        html += '            <strong>See All Alerts</strong>';
-        html += '            <i class="fa fa-angle-right"></i>';
-        html += '        </a>';
-        html += '    </div>';
-        html += '</li>';
-
         $('ul#notify').html(html);
 
 //        Set is Viewed
