@@ -23,7 +23,7 @@
 		
 		$(document).ready(function(){
 			$("a#del_img_demo").on('click',function(){
-				 var url = "http://localhost/laravel_doan/admin/product/delimg/";
+				 var url = baseURL+"/admin/product/delimg/";
 				 var _token = $("form[name='frmEditProduct']").find("input[name='_token']").val();
 				 var idHinh = $(this).parent().find("img").attr("idHinh");
 				 var img = $(this).parent().find("img").attr("src");

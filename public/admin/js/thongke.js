@@ -6,13 +6,14 @@ $(document).ready(function () {
         url: baseURL+"/admin/report/getturnover",
         method: "GET",
         success: function (response) {
-            console.log(response);
+            // console.log(response);
             var data = {};
             var data_qty = {};
             $.each(response.data, function (i, item) {
                data[item.month] = item;
             });
 
+            // console.log(data);
             $.each(response.month, function (i, item) {
                 var tm= data[item] ? data[item].qty : 0;
                 arrTunoverTotals.push(tm);
@@ -23,11 +24,12 @@ $(document).ready(function () {
             $.each(response.data_qty, function (i, item) {
                 data_qty[item.month] = item;
             });
-
+        
             $.each(response.month, function (i, item) {
                 var tm= data_qty[item] ? data_qty[item].amount_qty : 0;
                 arrAmountProducts.push(tm);
             });
+
 
             // Line chart tổng số hoa don
             var ctx = document.getElementById("lineChart");

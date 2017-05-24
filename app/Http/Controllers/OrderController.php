@@ -49,7 +49,7 @@ class OrderController extends Controller {
 			$msg->from('duyxinhtrai@gmail.com','Shop Gia Bảo');
 			$msg->to(Input::get('email'),'Message from Gia Bảo Shop')->subject('Thông báo mua hàng');
 		});
-		//Cart::destroy();
+		Cart::destroy();
 		//return redirect()->route('giohang')->with(['flash_message' => 'Đặt hàng thành công']);
 		return view('user.pages.order',compact('tran','content','total'))->with(['flash_message' => 'Đặt hàng thành công,đây là hóa đơn của bạn']);
 	}
