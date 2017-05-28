@@ -30,7 +30,7 @@ class ProductRequest extends Request {
             'sltSize'=> 'required',
             'sltSale'=> 'required',
             'sltType'=> 'required',
-            'txtPrice'=> 'required',
+            'txtPrice'=> 'required|numeric',
             'txtName' => 'required|unique:products,name',
 			'fImages' => 'required|image'
 			
@@ -50,6 +50,7 @@ class ProductRequest extends Request {
 			'txtName.required'  => 'Please enter name product',
 			'txtName.unique'    => 'Product name is exitst',
             'txtPrice.required'  => 'Please enter price product',
+            'txtPrice.numeric'  => 'Please enter the number',
 			'fImages.required'  => 'Please choose image',
 			'fImages.image'  => 'This File not image'
 			
