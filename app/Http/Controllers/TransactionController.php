@@ -54,7 +54,7 @@ class TransactionController extends Controller {
         $data['data'] = Order::join('transactions', 'orders.transaction_id', '=', 'transactions.id')
             ->join('products', 'orders.product_id', '=', 'products.id')
             ->select('orders.id','orders.created_at', 'products.name','orders.product_id', 'transactions.user_name' ,'products.image')
-            ->where('is_viewed','=',0)
+            ->where('is_viewed','<>',1)
             ->orderBy('orders.created_at', 'des')
             ->get();
         return json_encode($data);
